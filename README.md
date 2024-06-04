@@ -36,7 +36,7 @@ Users
 ```
 3. create user
 ```bash
-    curl -X POST -d '{"username":"vinay"}' 'http://localhost:3000/users/1'
+    curl -X POST -d '{"username":"vinay"}' 'http://localhost:3000/users/1'cur
 ```
 
 
