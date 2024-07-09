@@ -1,3 +1,5 @@
+import { Exclude, Expose } from "class-transformer";
+import e from "express";
 export class User{
     username:string;
     password:string;
@@ -42,3 +44,22 @@ export class Meter{
         this.readings=readings;
     }
 }
+
+export class UserDTO{
+   @Expose()
+   username!:string;
+
+   @Exclude()
+   password!:string;
+
+   @Expose()
+   email!:string;
+
+   @Expose()
+   fullname!:string;
+
+   @Expose()
+   id!:number;
+
+}
+   
